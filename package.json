@@ -7,9 +7,9 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "start": "webpack-dev-server & yarn start-clock",
-    "start-clock": "yarn workspace clock-face start & yarn workspace clock-buttons serve",
-    "build-clock": "yarn workspace clock-face build && yarn workspace clock-buttons build",
+    "start": "webpack-dev-server & yarn start-apps",
+    "start-apps": "yarn workspace react-app start & yarn workspace vue-app serve",
+    "build-apps": "yarn workspace react-app build && yarn workspace vue-app build",
     "build": "NODE_ENV=production webpack"
   },
   "workspaces": [

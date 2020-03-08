@@ -1,5 +1,4 @@
 const path = require("path");
-const clockFaceConfig = require("./apps/clock-face/config/webpack.config");
 const VueLoaderPlugin = require('vue-loader/lib/plugin')
 
 module.exports = {

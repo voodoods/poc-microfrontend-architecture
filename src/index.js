@@ -1,14 +1,14 @@
-import { ClockFace } from "./custom-elements/clock-face"
-import { ClockButtons } from "./custom-elements/clock-buttons"
+import { ReactApp } from "./custom-elements/react-app"
+import { VueApp } from "./custom-elements/vue-app"
 
-window.customElements.define("clock-face", ClockFace)
-window.customElements.define("clock-buttons", ClockButtons)
+window.customElements.define("react-app", ReactApp)
+window.customElements.define("vue-app", VueApp)
 
-function clockApplication() {
+function compositionPage() {
   const element = document.createElement("div")
   element.innerHTML = `
-    <clock-face class="mfe-app"></clock-face>
-    <clock-buttons class="mfe-app"></clock-buttons>
+    <react-app class="mfe-app"></react-app>
+    <vue-app class="mfe-app"></vue-app>
   `
 
   return element
@@ -23,4 +23,4 @@ styles.innerHTML = `
 }
 `
 document.head.appendChild(styles)
-document.body.appendChild(clockApplication())
+document.body.appendChild(compositionPage())

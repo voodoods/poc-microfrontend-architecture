@@ -1,4 +1,4 @@
-# clock-buttons
+# vue-app
 
 ## Project setup
 ```

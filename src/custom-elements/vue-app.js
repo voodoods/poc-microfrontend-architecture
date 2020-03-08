@@ -1,9 +1,9 @@
 import Vue from 'vue'
-import App from '../../apps/clock-buttons/src/App.vue'
+import App from '../../apps/vue-app/src/App.vue'
 
 Vue.config.productionTip = false
 
-export class ClockButtons extends HTMLElement {
+export class VueApp extends HTMLElement {
   connectedCallback() {
     const element = document.createElement('div')
     element.setAttribute('id', 'app')

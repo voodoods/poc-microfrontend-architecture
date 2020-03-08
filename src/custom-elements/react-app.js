@@ -1,8 +1,8 @@
 import React from 'react'
 import { render, unmountComponentAtNode } from 'react-dom'
-import App from '../../apps/clock-face/src/App'
+import App from '../../apps/react-app/src/App'
 
-export class ClockFace extends HTMLElement {
+export class ReactApp extends HTMLElement {
   connectedCallback() {
     render(<App/>, this)
   }
