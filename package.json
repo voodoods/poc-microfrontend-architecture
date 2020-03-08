@@ -7,7 +7,7 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "start": "webpack-dev-server & yarn start-apps",
+    "start": "NODE_ENV=development webpack-dev-server & yarn start-apps",
     "start-apps": "yarn workspace react-app start & yarn workspace vue-app serve",
     "build-apps": "yarn workspace react-app build && yarn workspace vue-app build",
     "build": "NODE_ENV=production webpack"
